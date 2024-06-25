@@ -29,7 +29,7 @@ export default async function MoviePage({ params }) {
           </p>
           <p className='mb-3'>
             <span className='font-semibold mr-1'>Genres:</span>
-            {movie.genres.map(genre => genre.name).join(', ')}
+            {movie.genres?.map(genre => genre.name).join(', ')}
           </p>
           <p className='mb-3'>
             <span className='font-semibold mr-1'>Duration:</span>
